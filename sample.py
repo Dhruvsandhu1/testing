@@ -26,7 +26,7 @@ st.title("Review Fetcher and Listing Deletion")
 
 if st.button("Fetch Reviews"):
     reviews = fetch_reviews()
-    # st.write(reviews)
+    st.write(reviews)
     for i in range(len(reviews)):
         # st.write("Fetched Reviews:", reviews[i]['author'])
         st.write(f"Author : {reviews[i]['item']['author']}") 
