@@ -29,6 +29,7 @@ if st.button("Fetch Reviews"):
     # st.write(reviews)
     for i in range(len(reviews)):
         # st.write("Fetched Reviews:", reviews[i]['author'])
-
+        st.write(f"Author : {reviews[i]['item']['author']}") 
+        st.write(f"Filter Used : {reviews[i]['filter']}") 
         st.write(reviews[i]['item']['text'])   
         st.write("__________________________")
